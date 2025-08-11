@@ -5,12 +5,12 @@
 class Lash < Formula
   desc ""
   homepage ""
-  version "0.4.6"
+  version "0.4.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.4.6/lash_0.4.6_Darwin_x86_64.tar.gz"
-      sha256 "0f109b0a6ba554f93f6a337f619a41c67c7653cdee6f915dc029b804e3ed6b91"
+      url "https://github.com/lacymorrow/lash/releases/download/v0.4.7/lash_0.4.7_Darwin_x86_64.tar.gz"
+      sha256 "4f4ebbead086f607500f23dd09b72a323bf93055f0710890c9fdf9d837cfecb7"
 
       def install
         bin.install "lash"
@@ -21,8 +21,8 @@ class Lash < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.4.6/lash_0.4.6_Darwin_arm64.tar.gz"
-      sha256 "28688a6af8f84f11264fab50ef9e5802e94f5db9f93a6b19848181e0e35465b2"
+      url "https://github.com/lacymorrow/lash/releases/download/v0.4.7/lash_0.4.7_Darwin_arm64.tar.gz"
+      sha256 "472d4e1cc007508d8ba2969e4affb8d6ba3420802c796ed098844f05ef901a7e"
 
       def install
         bin.install "lash"
@@ -36,8 +36,8 @@ class Lash < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.4.6/lash_0.4.6_Linux_x86_64.tar.gz"
-      sha256 "e00742604a6b6342b774962372eed8e07b7b83bcf220ee2e5f612f78c43f1342"
+      url "https://github.com/lacymorrow/lash/releases/download/v0.4.7/lash_0.4.7_Linux_x86_64.tar.gz"
+      sha256 "adbfcce9ac39d2a61b981c1eceb9aa45725afe1d2d36c8eb74f42690fb69e123"
       def install
         bin.install "lash"
         bash_completion.install "completions/lash.bash" => "lash"
@@ -47,8 +47,8 @@ class Lash < Formula
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.4.6/lash_0.4.6_Linux_armv7.tar.gz"
-      sha256 "1457c3633125897e773c1592caeacf2583599a6e791654388f16ea20ab4faa3a"
+      url "https://github.com/lacymorrow/lash/releases/download/v0.4.7/lash_0.4.7_Linux_armv7.tar.gz"
+      sha256 "be04dfa098ea29bff04b8df0a8f3bedcfc3d020913b6ba0ff354a34068a2fe58"
       def install
         bin.install "lash"
         bash_completion.install "completions/lash.bash" => "lash"
@@ -58,8 +58,8 @@ class Lash < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.4.6/lash_0.4.6_Linux_arm64.tar.gz"
-      sha256 "232606627b8d0318c9457033c34394e5757aedf75940f6be77d972d516da7273"
+      url "https://github.com/lacymorrow/lash/releases/download/v0.4.7/lash_0.4.7_Linux_arm64.tar.gz"
+      sha256 "b985b6e41ace60750ffda0bc1dff5a5746d45d4979e739f3601e23d0a849101b"
       def install
         bin.install "lash"
         bash_completion.install "completions/lash.bash" => "lash"
