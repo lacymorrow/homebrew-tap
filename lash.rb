@@ -10,7 +10,7 @@ class Lash < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lacymorrow/lash/releases/download/v0.4.6/lash_0.4.6_Darwin_x86_64.tar.gz"
-      sha256 "0781ddcdb0381e6ce27ef707f3b9fe70733b34d1715ee1276d48131662773b72"
+      sha256 "0f109b0a6ba554f93f6a337f619a41c67c7653cdee6f915dc029b804e3ed6b91"
 
       def install
         bin.install "lash"
@@ -22,7 +22,7 @@ class Lash < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lacymorrow/lash/releases/download/v0.4.6/lash_0.4.6_Darwin_arm64.tar.gz"
-      sha256 "d92d2d637b8b2cfa08662d74177045eabd709036c5ea964dea517af2226f918e"
+      sha256 "28688a6af8f84f11264fab50ef9e5802e94f5db9f93a6b19848181e0e35465b2"
 
       def install
         bin.install "lash"
@@ -37,7 +37,7 @@ class Lash < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/lacymorrow/lash/releases/download/v0.4.6/lash_0.4.6_Linux_x86_64.tar.gz"
-      sha256 "555e06f9e2b1043486d1eb0d994416d5baccb83c0536c7667c4e27fd1d710f86"
+      sha256 "e00742604a6b6342b774962372eed8e07b7b83bcf220ee2e5f612f78c43f1342"
       def install
         bin.install "lash"
         bash_completion.install "completions/lash.bash" => "lash"
@@ -48,7 +48,7 @@ class Lash < Formula
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
       url "https://github.com/lacymorrow/lash/releases/download/v0.4.6/lash_0.4.6_Linux_armv7.tar.gz"
-      sha256 "56eb29d353956f91c44973d765efbc1b82c4348b8268f133721a0770944f0e7b"
+      sha256 "1457c3633125897e773c1592caeacf2583599a6e791654388f16ea20ab4faa3a"
       def install
         bin.install "lash"
         bash_completion.install "completions/lash.bash" => "lash"
@@ -59,7 +59,7 @@ class Lash < Formula
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/lacymorrow/lash/releases/download/v0.4.6/lash_0.4.6_Linux_arm64.tar.gz"
-      sha256 "0d3d8d95641dc462d762dd0af43260cc8326fe17a82dfc0c7972c029394d3c26"
+      sha256 "232606627b8d0318c9457033c34394e5757aedf75940f6be77d972d516da7273"
       def install
         bin.install "lash"
         bash_completion.install "completions/lash.bash" => "lash"
