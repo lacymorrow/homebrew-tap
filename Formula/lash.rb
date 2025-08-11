@@ -9,8 +9,8 @@ class Lash < Formula
   depends_on "go" => :build
 
   def install
-    ldflags = "-s -w -X github.com/lacymorrow/lash/internal/version.Version=v\#{version}"
-    system "go", "build", "-trimpath", "-ldflags=\#{ldflags}", "-o", bin/"lash", "."
+    ldflags = "-s -w -X github.com/lacymorrow/lash/internal/version.Version=v#{version}"
+    system "go", "build", "-trimpath", "-ldflags=#{ldflags}", "-o", bin/"lash", "."
 
     (buildpath/"lash.bash").write Utils.safe_popen_read(bin/"lash", "completion", "bash")
     (buildpath/"_lash").write Utils.safe_popen_read(bin/"lash", "completion", "zsh")
@@ -25,6 +25,6 @@ class Lash < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("\#{bin}/lash --version")
+    assert_match version.to_s, shell_output("#{bin}/lash --version")
   end
 end
