@@ -9,36 +9,36 @@ class Lash < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12/lash-darwin-x64.tar.gz"
-      sha256 "2c4fb3bca92f320d347ddc4dd31e16e36031583b4497eeafc8466118a19e9564"
+      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12-fixed/lash-darwin-x64.tar.gz"
+      sha256 "4f7ed32e49e3f3a83a7d421534c1be09a49c1dbfa4e636f35ef6e4a402f276b6"
 
       def install
-        bin.install "lash-darwin-x64" => "lash"
+        bin.install "lash"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12/lash-darwin-arm64.tar.gz"
-      sha256 "b279344e9df305238c623b09812ae7dcc22adc2561912e11a58fa9ee9ebfe3f1"
+      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12-fixed/lash-darwin-arm64.tar.gz"
+      sha256 "36f1aa99425591854084a15413acc9596d2b23bc29c9940afb26af9d202d9097"
 
       def install
-        bin.install "lash-darwin-arm64" => "lash"
+        bin.install "lash"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12/lash-linux-x64.tar.gz"
-      sha256 "a711bb982d63631a7e64968b3df17b7da94fef02166d223ed41c38928386aa63"
+      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12-fixed/lash-linux-x64.tar.gz"
+      sha256 "126f25cb405f025215c73156e5769ad2c027e9d48f4c51679f43cd43eac546aa"
       def install
-        bin.install "lash-linux-x64" => "lash"
+        bin.install "lash"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12/lash-linux-arm64.tar.gz"
-      sha256 "f7fed4be2a75ec3172c6201926e65949a4af699a85eedfc8f233af6c71cad798"
+      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12-fixed/lash-linux-arm64.tar.gz"
+      sha256 "08c610cdc70a95025a732ad2d840d785cdeac5dfa521664cda6caa0625d6e783"
       def install
-        bin.install "lash-linux-arm64" => "lash"
+        bin.install "lash"
       end
     end
   end
