@@ -13,7 +13,7 @@ class Lash < Formula
       sha256 "2c4fb3bca92f320d347ddc4dd31e16e36031583b4497eeafc8466118a19e9564"
 
       def install
-        bin.install "lash"
+        bin.install "lash-darwin-x64" => "lash"
       end
     end
     if Hardware::CPU.arm?
@@ -21,7 +21,7 @@ class Lash < Formula
       sha256 "b279344e9df305238c623b09812ae7dcc22adc2561912e11a58fa9ee9ebfe3f1"
 
       def install
-        bin.install "lash"
+        bin.install "lash-darwin-arm64" => "lash"
       end
     end
   end
@@ -31,14 +31,14 @@ class Lash < Formula
       url "https://github.com/lacymorrow/lash/releases/download/v0.6.12/lash-linux-x64.tar.gz"
       sha256 "a711bb982d63631a7e64968b3df17b7da94fef02166d223ed41c38928386aa63"
       def install
-        bin.install "lash"
+        bin.install "lash-linux-x64" => "lash"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/lacymorrow/lash/releases/download/v0.6.12/lash-linux-arm64.tar.gz"
       sha256 "f7fed4be2a75ec3172c6201926e65949a4af699a85eedfc8f233af6c71cad798"
       def install
-        bin.install "lash"
+        bin.install "lash-linux-arm64" => "lash"
       end
     end
   end
