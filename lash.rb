@@ -10,7 +10,7 @@ class Lash < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-darwin-x64.zip"
-      sha256 "7d7b807fbc819f601e2119d309ebcc46c2c335c79128c83bd598496f0dcec869"
+      sha256 "48b6577829dcff24149d7153463505502e65c3c3f7357d56de3ad20bf5d891c1"
 
       def install
         bin.install "lash"
@@ -18,7 +18,7 @@ class Lash < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-darwin-arm64.zip"
-      sha256 "706de54f6ebb477c03a3478855bdad0c1a984a352a6d714ff770d545559d8211"
+      sha256 "879ce5ae0f7fb2ca4d5a6ca4726efd406b266fd38d1e7d82945055f116f8afd1"
 
       def install
         bin.install "lash"
@@ -29,14 +29,14 @@ class Lash < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-linux-x64.zip"
-      sha256 "b78399646597f42c8af8fd90d708e33d8c69c8234bc04a49829cc7ff6696ecc4"
+      sha256 "dbc457c58a62c99227ced6c6b4f3a7457503486a508443f8c9ef955545d27ba3"
       def install
         bin.install "lash"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-linux-arm64.zip"
-      sha256 "36afbe02f6c1e3ac43bd5cd66824be2ab6caf48a45ab3be48ff1a99b0704c1fb"
+      sha256 "6b70d63e49fd03e787f39acc2176ca240c804df5056f42a2171058e1e23bbb28"
       def install
         bin.install "lash"
       end
