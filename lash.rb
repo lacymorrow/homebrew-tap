@@ -5,20 +5,20 @@
 class Lash < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/lacymorrow/lash"
-  version "0.6.12"
+  version "1.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12/lash-darwin-x64.tar.gz"
-      sha256 :no_check
+      url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-darwin-x64.zip"
+      sha256 "7d7b807fbc819f601e2119d309ebcc46c2c335c79128c83bd598496f0dcec869"
 
       def install
         bin.install "lash"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12/lash-darwin-arm64.tar.gz"
-      sha256 :no_check
+      url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-darwin-arm64.zip"
+      sha256 "706de54f6ebb477c03a3478855bdad0c1a984a352a6d714ff770d545559d8211"
 
       def install
         bin.install "lash"
@@ -28,15 +28,15 @@ class Lash < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12/lash-linux-x64.tar.gz"
-      sha256 :no_check
+      url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-linux-x64.zip"
+      sha256 "b78399646597f42c8af8fd90d708e33d8c69c8234bc04a49829cc7ff6696ecc4"
       def install
         bin.install "lash"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12/lash-linux-arm64.tar.gz"
-      sha256 :no_check
+      url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-linux-arm64.zip"
+      sha256 "36afbe02f6c1e3ac43bd5cd66824be2ab6caf48a45ab3be48ff1a99b0704c1fb"
       def install
         bin.install "lash"
       end
