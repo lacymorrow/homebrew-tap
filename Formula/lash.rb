@@ -5,20 +5,20 @@
 class Lash < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/lacymorrow/lash"
-  version "0.6.12"
+  version "1.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12-fixed/lash-darwin-x64.tar.gz"
-      sha256 "4f7ed32e49e3f3a83a7d421534c1be09a49c1dbfa4e636f35ef6e4a402f276b6"
+      url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-darwin-x64.zip"
+      sha256 "48b6577829dcff24149d7153463505502e65c3c3f7357d56de3ad20bf5d891c1"
 
       def install
         bin.install "lash"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12-fixed/lash-darwin-arm64.tar.gz"
-      sha256 "36f1aa99425591854084a15413acc9596d2b23bc29c9940afb26af9d202d9097"
+      url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-darwin-arm64.zip"
+      sha256 "879ce5ae0f7fb2ca4d5a6ca4726efd406b266fd38d1e7d82945055f116f8afd1"
 
       def install
         bin.install "lash"
@@ -28,15 +28,15 @@ class Lash < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12-fixed/lash-linux-x64.tar.gz"
-      sha256 "126f25cb405f025215c73156e5769ad2c027e9d48f4c51679f43cd43eac546aa"
+      url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-linux-x64.zip"
+      sha256 "dbc457c58a62c99227ced6c6b4f3a7457503486a508443f8c9ef955545d27ba3"
       def install
         bin.install "lash"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lacymorrow/lash/releases/download/v0.6.12-fixed/lash-linux-arm64.tar.gz"
-      sha256 "08c610cdc70a95025a732ad2d840d785cdeac5dfa521664cda6caa0625d6e783"
+      url "https://github.com/lacymorrow/lash/releases/download/v1.0.7/lash-cli-linux-arm64.zip"
+      sha256 "6b70d63e49fd03e787f39acc2176ca240c804df5056f42a2171058e1e23bbb28"
       def install
         bin.install "lash"
       end
