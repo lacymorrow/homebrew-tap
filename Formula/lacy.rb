@@ -4,8 +4,8 @@
 class Lacy < Formula
   desc "Talk directly to your shell - natural language to AI agent routing"
   homepage "https://github.com/lacymorrow/lacy-shell"
-  url "https://github.com/lacymorrow/lacy-shell/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "a4f5dd8f7707cdf400857c7ad745a2e9309ff64516942e9776c2bb20855cebe8"
+  url "https://github.com/lacymorrow/lacy-shell/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "9c2bb0e9e0cd64bd3d7a92c6454fd63b4f6b8a3f0843028591d79da05a8ced6a"
   license "MIT"
   head "https://github.com/lacymorrow/lacy-shell.git", branch: "main"
 
