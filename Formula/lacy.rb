@@ -4,8 +4,8 @@
 class Lacy < Formula
   desc "Talk to your shell - natural language to AI, commands to shell"
   homepage "https://lacy.sh"
-  url "https://github.com/lacymorrow/lacy/archive/refs/tags/v1.8.16.tar.gz"
-  sha256 "a84af1930f24bde7952b42b13c798cc012ca1b4a2a516bc00bc377504e56e8ee"
+  url "https://github.com/lacymorrow/lacy/archive/refs/tags/v1.8.17.tar.gz"
+  sha256 "e3843ab34d3a83387d8746831e6cbab10ac16519d5a530ccfb4b05c97cca2d39"
   license "MIT"
   head "https://github.com/lacymorrow/lacy.git", branch: "main"
 
