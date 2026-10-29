@@ -4,22 +4,22 @@
 class JunoCua < Formula
   desc "Headless computer use agent — screenshot, click, type, scroll from the CLI"
   homepage "https://github.com/lacymorrow/juno"
-  version "0.8.246"
+  version "0.8.247"
 
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lacymorrow/juno/releases/download/cua-v0.8.246/juno-cua-darwin-arm64.tar.gz"
-      sha256 "33030ff98c6b59d554ce6744d42651a18095823ad63200785407999a0c3228ef"
+      url "https://github.com/lacymorrow/juno/releases/download/cua-v0.8.247/juno-cua-darwin-arm64.tar.gz"
+      sha256 "12ff78b44dfdbe16125b1ba3715407e38a26b650afbf488236b24362b2c5ea33"
 
       def install
         bin.install "juno-cua"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lacymorrow/juno/releases/download/cua-v0.8.246/juno-cua-darwin-x64.tar.gz"
-      sha256 "546836de5156e6a3ac08799279d978e5123f6974e747c991eebe792dd658c6cd"
+      url "https://github.com/lacymorrow/juno/releases/download/cua-v0.8.247/juno-cua-darwin-x64.tar.gz"
+      sha256 "85d48fab5b07c2d7190c15c991cac47e508911c5e54719ab11f48757d91b2c66"
 
       def install
         bin.install "juno-cua"
